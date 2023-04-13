@@ -4,6 +4,9 @@
     font-family: calibri;
     box-sizing: border-box;
 }
+body {
+    background-color: rgb(157, 47, 47);
+}
 
 .navbar {
     height: 40px;
@@ -11,14 +14,6 @@
     background-color: rgb(0, 0, 0);
     color: white;
 }
-
-.container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr auto auto;
-    background-color: rgb(0, 0, 0);
-}
-
 .header {
     height: 700px;
     background-image: url(https://www.2playbook.com/uploads/s1/91/61/6/manchester-united.jpeg);
@@ -46,7 +41,6 @@
     height: 200px;
     width: 200px;
     margin-top: 100px;
-
     border-radius: 50%;
     box-shadow: 0 0 10px;
 }
@@ -54,11 +48,11 @@
     font-size: 50px;
     color: rgb(0, 0, 0);
     background-color: white;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 .btn {
     border: 2px;
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: transparent;
     padding: 16px 32px;
     text-align: center;
@@ -70,21 +64,69 @@
   }
   
 .btn:hover {
-    background-color: rgb(177, 48, 48);
+    background-color: rgba(255, 255, 255, 0.808);
+}
 
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto auto;
+    background-color: rgb(248, 248, 248);
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 h2 {
     font-size: 45px;
-    color: rgb(205, 201, 201);
-    font-family: 'Bungee Shade';
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
 }
-
-.top-players {
-    color:white;
+.ticket-boxes {
     margin-right: auto;
     margin-left: auto;
     display: grid;
+    gap: 5px;
+    grid-template-columns: 400px 400px 400px;
+
+}
+.tickets {
+    position: relative;
+    width: 100%;
+    max-width: 370px;
+    margin-left: 20px;
+}
+.tickets img {
+    width: 100%;
+    height: 300px;
+    opacity: 0.9;
+}
+.tickets .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 22px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.tickets .btn:hover {
+    background-color: black;
+}
+.top-players {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    display: grid;
+    gap: 5px;
     grid-template-rows: 300px;
     grid-template-columns: 300px 300px 300px;
 
@@ -118,7 +160,7 @@ h2 {
     opacity: 1;
 }
 .text {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     padding: 16px 32px;
 }
@@ -126,10 +168,10 @@ table {
     border-spacing: 0;
     width: 200px;
     height: 200px;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
 }
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     width: 20px;
 }
 
