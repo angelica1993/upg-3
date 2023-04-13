@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: calibri;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 40px;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.header {
+    height: 700px;
+    background-image: url(https://wallpapercave.com/wp/bn0yUBq.jpg);
+    background-size: cover;
+    opacity: 0.7;
+}
+
+#animation {
+    animation: 3s forwards alternate animate;
+    font-size: 65px;
+    font-family: 'Bungee Shade';
+    color: rgb(255, 255, 255);
+
+}
+@keyframes animate {
+    0% {
+        margin-left: 0%;
+    }
+
+    100% {
+        margin-left: 20%;
+    }
+}
+.images img  {
+    height: 200px;
+    width: 200px;
+    margin-top: 100px;
+
+    border-radius: 50%;
+    box-shadow: 0 0 10px;
+}
+.header h1 {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    opacity: 0.7;
+}
+.btn {
+    border: 2px;
+    color: white;
+    background-color: transparent;
+    padding: 16px 32px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: rgb(177, 48, 48);
+
+}
+
+.main {
+    display: grid;
+    color:white;
+}
+
+.main p {
+    display: grid;
+
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    height: 300px;
+}
