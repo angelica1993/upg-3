@@ -13,15 +13,11 @@ header {
     background-color: rgb(171, 48, 48);
     height: 100px;
     display: flex;
-    align-items: center;
     top: 0;
-    width: 100%;
+    width:100%;
 }
 header nav {
     padding: 1.5em 0 1.5em 5em;
-}
-#login {
-    margin-left: 1100px;
 }
 header nav a {
     text-decoration: none;
@@ -96,23 +92,29 @@ header nav a:hover {
     margin: 4px 2px;
     transition: 0.3s;
     cursor: pointer;
-    margin-bottom: 50px;
+    margin-bottom: 85px;
   }
 .btn:hover {
     background-color:  #cacaca;
 }
 /*style på nästa sektion med rubrik*/
 h2 {
-    font-size: 40px;
+    font-size: 35px;
     color: rgb(0, 0, 0);
-    margin-top: 20px;
-    margin-bottom: 30px;
     margin-left: 30px;
+    margin-top: 20px;
+}
+h4 {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color:rgb(171, 48, 48);
 }
 /*3 olika sektioner som jag placerat med grids*/
 .ticket-boxes {
     margin-right: auto;
     margin-left: auto;
+    margin-top: 50px;
     display: grid;
     gap: 100px;
     grid-template-columns: 400px 400px 400px;
@@ -243,6 +245,7 @@ h2 {
     gap: 5px;
     grid-template-rows: 300px;
     grid-template-columns: 300px 300px 300px;
+    margin-bottom: 100px;
 }
 .players {
     width: 250px;
@@ -289,6 +292,74 @@ table {
 th, td {
     border: 1px solid #000000;
     width: 20px;
+}
+/*sektion med webbshop*/
+.webbshop {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 250px 250px 250px 250px 250px;
+}
+.shop {
+    position: relative;
+    background-color: #ffffff;
+    width: 250px;
+    height: 350px;
+    margin-left: 20px;
+}
+/*header med klick-länk till webbshoppen*/
+h2 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(171, 48, 48);
+}
+/*hover över länken för snygg style*/
+h2 a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/*varje sektion är en bild med en länk i för att klicka vidare till webbshoppen*/
+.shop img {
+    height: 200px;
+    width: 185px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    opacity: 0.9;
+}
+.shop img:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+/*text som förklarar vad bilden visar*/
+.shop p {
+    margin-left: 50px;
+    font-style: italic;
+}
+/*klick-knapp till webbsidan*/
+.shop .btn {
+    position: absolute;
+    width: 150px;
+    top:80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+/*:hover effekt även här för snygg styling*/
+.shop .btn:hover {
+    background-color: rgb(171, 48, 48);
 }
 
 /*footer längst ner på sidan med användar-registrering och social-media länkar*/
