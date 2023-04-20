@@ -11,13 +11,13 @@ body {
 använt :hover på länkarna för style*/
 header {
     background-color: rgb(27, 27, 27);
-    height: 70px;
+    height: 80px;
+    width: 100%;
     display: flex;
     top: 0;
-    width:100%;
 }
 header nav {
-    padding: 1.5em 0 1.5em 5em;
+    margin: 15px 35px;
 }
 header nav a {
     text-decoration: none;
@@ -28,13 +28,36 @@ header nav a {
 header nav a:hover {
     opacity: 0.2;
 }
+/*en home-ikon för snyggare style*/
+#home {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+/*log-in fält till höger av navbaren*/
+.login-container {
+    margin-left: 500px;
+    margin-top: 20px;
+}
+.login-container input[type=text] {
+    font-size: 17px;
+    border: none;
+    padding: 5px 5px;
+}
+.login-container button {
+    padding: 5px;
+    font-size: 17px;
+    width: 100px;
+    background-color: rgb(171, 48, 48);
+    border: none;
+    cursor: pointer;
+}
 
 /*Här har jag stylat header-sektionen med en bakgrundsbild och en animation*/
 .header {
     height: 650px;
     background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2Fwc1691952.jpg&f=1&nofb=1&ipt=f24cfd255dc8b05188bd2f3a3baddea16f787c003ab4d8eea5fcc3a23ea5830c&ipo=images);
     background-size: cover;
-    ;
 }
 .header p {
     font-size: 75px;
@@ -86,7 +109,7 @@ header nav a:hover {
 .btn {
     border: 2px;
     color: rgb(0, 0, 0);
-    background-color: rgb(231, 231, 231);
+    background-color: #cacaca;
     padding: 16px 32px;
     text-align: center;
     font-weight: bold;
@@ -94,11 +117,12 @@ header nav a:hover {
     margin: 4px 2px;
     transition: 0.3s;
     cursor: pointer;
-    margin-bottom: 85px;
+    margin-bottom: 100px;
   }
 .btn:hover {
-    background-color:  #cacaca;
+    background-color: rgb(171, 48, 48);
 }
+
 /*style på nästa sektion med rubrik*/
 h2 {
     font-size: 35px;
@@ -158,7 +182,9 @@ h4 #login:hover {
 /*:hover effekt även här för snygg styling*/
 .tickets .btn:hover {
     background-color: black;
+    scale: 1.1;
 }
+
 /*nästa sektion är en main-info där jag placerat ut 2 olika columner med grids*/
 .main-info {
     display: grid;
@@ -173,6 +199,7 @@ h4 #login:hover {
 .interview {
     background-color: #d8d8d8;
     padding-left: 20px;
+    padding-top: 20px;
     margin-left: 70px;
 }
 .interview p {
@@ -210,6 +237,7 @@ h4 #login:hover {
 .interview h3 a:hover {
     color: black;
 }
+
 /*den andra columnen i main-info är en nyhets-box*/
 .news {
     background-color: #d8d8d8;
@@ -223,6 +251,7 @@ h4 #login:hover {
     color: white;
     margin-right: 20px;
     margin-bottom: 15px;
+    margin-top: 30px;
 }
 /*länkar till de olika nyhetslänkarna*/
 .news a {
@@ -304,6 +333,7 @@ th, td {
     border: 1px solid #000000;
     width: 20px;
 }
+
 /*sektion med webbshop*/
 .webbshop {
     margin-right: auto;
@@ -331,7 +361,6 @@ h2 a {
 h2 a:hover {
     color: rgb(0, 0, 0);
 }
-
 /*varje sektion är en bild med en länk i för att klicka vidare till webbshoppen*/
 .shop img {
     height: 200px;
@@ -439,11 +468,11 @@ h2 a:hover {
 .about-us p {
     margin-top: 90px;
     font-style: italic;
+    margin-bottom: 80px;
 }
 /*social-media*/
 .fa {
     padding: 20px;
-    margin-top: 80px;
     margin-left: 20px;
     font-size: 60px;
     width: 60px;
