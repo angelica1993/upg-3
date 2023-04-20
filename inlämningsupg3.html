@@ -36,7 +36,7 @@
         <button class="btn">BUY TICKET</button></center> <!--en länk-knapp för användaren att köpa biljett till matchen-->
 
         <h2>BUY ALL YOUR PREMIER LEAGUE TICKETS HERE:</h2> <!--rubrik för biljetter-->
-        <h4>Remember! You need to login to use your membership points</h4>
+        <h4>Remember! You need to <a id="login" href="login">login</a> to use your membership points</h4>
         <section class="ticket-boxes"> <!--sektion med bilder och länk-knappar för olika biljett-alternativ-->
             <div id="tickets" class="tickets">
                 <img src="img/familyfootball.jpg" alt="familyticket">
@@ -240,6 +240,7 @@
             </div>
         </section>
 
+        <!--sektion med webbshop som är länkad till "webbshop" i navbar-->
         <h2>TRENDING NOW <a href="click-shop"> - ENTER THE STORE</a></h2>
         <section id="webbshop" class="webbshop">
             <div class="shop">
@@ -268,23 +269,26 @@
                 <button class="btn">SHOP NOW</button>
             </div>
         </section>
+
+        <!--användar-registrering som är länkad till "register" i navbar-->
+        <section class="register-form">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="login-register"></div>
+                    <button type="button" class="member-btn">Become a member now</button>
+                </div>
+                <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <br>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </section>
     </div>
 
     <section class="footer"> <!--footer längst ner på sidan-->
-        <!--användar-registrering som är länkad till "register" i navbar-->
-        <div class="form-box">
-            <div class="button-box">
-                <div id="login-register"></div>
-                <button type="button" class="btn">Become a member now</button>
-            </div>
-            <form id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="email" class="input-field" placeholder="Email Id" required>
-                <input type="text" class="input-field" placeholder="Enter Password" required>
-                <br>
-                <button type="submit" class="submit-btn">Register</button>
-            </form>
-        </div>
         <!--lite information om manchester united som är länkad till "about" i navbar-->
         <div id="about" class="about-us">
             <center><p>"At Manchester United our mission is to<br>
