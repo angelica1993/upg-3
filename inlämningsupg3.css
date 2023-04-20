@@ -56,14 +56,14 @@ header nav a:hover {
 /*Här har jag stylat header-sektionen med en bakgrundsbild och en animation*/
 .header {
     height: 650px;
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2Fwc1691952.jpg&f=1&nofb=1&ipt=f24cfd255dc8b05188bd2f3a3baddea16f787c003ab4d8eea5fcc3a23ea5830c&ipo=images);
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2Fwc1691952.jpg&f=1&nofb=1&ipt=f24cfd255dc8b05188bd2f3a3baddea16f787c003ab4d8eea5fcc3a23ea5830c&ipo=images) center/cover no-repeat fixed;
+    background-size: cover; 
 }
 .header p {
     font-size: 75px;
     font-family: 'Vast Shadow';
     color: rgb(255, 255, 255);
-    padding-top: 70px;
+    padding-top: 500px;
 }
 /*en animation som gör att header-rubriken rör på sig lite*/
 #animation {
