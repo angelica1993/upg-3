@@ -52,6 +52,9 @@ header nav a:hover {
     border: none;
     cursor: pointer;
 }
+.login-container button:hover {
+    background-color: rgb(51, 51, 51);
+}
 
 /*Här har jag stylat header-sektionen med en bakgrundsbild och en animation*/
 .header {
@@ -453,15 +456,13 @@ h2 a:hover {
     border-radius: 30px;
 }
 .submit-btn:hover {
-    opacity: 0.4;
+    background-color: rgb(51, 51, 51);
 }
 
 /*footer längst ner på sidan med användar-registrering och social-media länkar*/
 .footer {
     background-color: rgb(27, 27, 27);
     color: white;
-    display: grid;
-    grid-template-columns: auto;
     height: 550px;
 }
 /*lite information om laget*/
